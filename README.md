@@ -6,7 +6,7 @@ The application allows users to explore laptops, search products, add items to t
 
  <p> 🚀 Features</p>
 
-👤 <p> User Features</p>
+<p> 👤  User Features</p>
 
 User Registration and Login
 
@@ -60,7 +60,7 @@ View Registered Users
 
 Approve or Reject Customer Reviews
 
-🛒<p> E-Commerce Features</p>
+<p> 🛒 E-Commerce Features</p>
 
 Dynamic Product Listing
 
@@ -74,7 +74,7 @@ Order Management
 
 Customer Testimonials
 
-🛠️ <p>Technologies Used</p>
+ <p> 🛠️Technologies Used</p>
 
 <p>Backend</p>
 
