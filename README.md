@@ -45,9 +45,11 @@ CSS3
 
 
 <p>Database</p>
+
 MySQL
 
 <p>Development Tools</p>
+
 Spring Tool Suite (STS)
 Visual Studio Code
 MySQL Workbench
