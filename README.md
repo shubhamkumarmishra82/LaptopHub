@@ -4,7 +4,7 @@ LaptopHub is a full-stack laptop e-commerce web application developed using Java
 
 The application allows users to explore laptops, search products, add items to their cart, place orders, manage their profiles, and submit reviews. It also provides an admin panel to manage products, orders, users, and customer reviews.
 
-🚀 <p> Features</p>
+ <p> 🚀 Features</p>
 
 👤 <p> User Features</p>
 
@@ -36,7 +36,7 @@ Change Password
 
 Submit, Update, and Delete Reviews
 
-🔐<p> Admin Features</p>
+ <p> 🔐 Admin Features</p>
 
 Admin Registration and Login
 
