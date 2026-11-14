@@ -1,0 +1,183 @@
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #111827;
+
+  color: #ffffff;
+
+  padding: 55px 0 20px;
+
+  margin-top: 30px;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand h3 {
+  font-size: 24px;
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+
+.footer-brand p {
+  max-width: 320px;
+
+  color: #9ca3af;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.footer-title {
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-bottom: 18px;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+
+.footer-links a {
+  color: #9ca3af;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: all 0.25s ease;
+}
+
+
+.footer-links a:hover {
+  color: #ffffff;
+
+  padding-left: 4px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.footer-divider {
+  border: 0;
+
+  border-top: 1px solid #374151;
+
+  margin: 40px 0 20px;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.footer-bottom p {
+  color: #9ca3af;
+
+  font-size: 13px;
+
+  margin: 0;
+}
+
+
+/* =========================
+   SOCIAL
+========================= */
+
+.footer-social {
+  display: flex;
+
+  gap: 18px;
+}
+
+
+.footer-social a {
+  color: #9ca3af;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: 0.25s ease;
+}
+
+
+.footer-social a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 40px 0 18px;
+  }
+
+  .footer-brand {
+    margin-bottom: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+}
+

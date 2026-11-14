@@ -1,0 +1,400 @@
+```css
+/* ================================
+   LAPTOP HUB CAROUSEL
+================================ */
+
+#laptopCarousel {
+  width: 100%;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+
+/* ================================
+   SLIDE
+================================ */
+
+#laptopCarousel .carousel-item {
+  min-height: 430px;
+  position: relative;
+}
+
+
+/* ================================
+   LAPTOP IMAGE
+================================ */
+
+.laptop-carousel-img {
+  width: 100%;
+  height: 430px;
+
+  object-fit: contain;
+  object-position: center;
+
+  display: block;
+
+  background: #f8fafc;
+
+  padding: 25px 7%;
+}
+
+
+/* ================================
+   CAPTION
+================================ */
+
+#laptopCarousel .carousel-caption {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+
+  width: 52%;
+
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+
+  padding: 40px 0 40px 8%;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.carousel-content {
+  max-width: 500px;
+}
+
+
+/* ================================
+   OFFER
+================================ */
+
+.offer-text {
+  display: inline-block;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+
+  padding: 7px 13px;
+
+  border-radius: 20px;
+
+  background: #111827;
+  color: white;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.carousel-content h1 {
+  font-size: 48px;
+
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  margin: 0 0 18px;
+
+  color: #111827;
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.carousel-content p:not(.offer-text) {
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  color: #4b5563;
+
+  max-width: 440px;
+
+  margin-bottom: 25px;
+}
+
+
+/* ================================
+   SHOP BUTTON
+================================ */
+
+.shop-btn {
+  border: none;
+
+  padding: 13px 30px;
+
+  border-radius: 7px;
+
+  background: #111827;
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.shop-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   INDICATORS
+================================ */
+
+#laptopCarousel .carousel-indicators {
+  bottom: 15px;
+
+  margin-bottom: 0;
+}
+
+
+#laptopCarousel .carousel-indicators button {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  margin: 0 5px;
+
+  border: none;
+
+  opacity: 0.4;
+}
+
+
+#laptopCarousel .carousel-indicators .active {
+  width: 25px;
+
+  border-radius: 10px;
+
+  opacity: 1;
+}
+
+
+/* ================================
+   PREVIOUS / NEXT BUTTON
+================================ */
+
+#laptopCarousel .carousel-control-prev,
+#laptopCarousel .carousel-control-next {
+  width: 55px;
+  height: 55px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+
+  margin: 0 20px;
+
+  opacity: 0;
+
+  transition: all 0.3s ease;
+}
+
+
+#laptopCarousel:hover .carousel-control-prev,
+#laptopCarousel:hover .carousel-control-next {
+  opacity: 1;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 992px) {
+
+  #laptopCarousel .carousel-item {
+    min-height: 360px;
+  }
+
+  .laptop-carousel-img {
+    height: 360px;
+
+    padding: 20px 5%;
+  }
+
+  #laptopCarousel .carousel-caption {
+    width: 55%;
+
+    padding-left: 6%;
+  }
+
+  .carousel-content h1 {
+    font-size: 36px;
+  }
+
+  .carousel-content p:not(.offer-text) {
+    font-size: 15px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin: 0 10px !important;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  #laptopCarousel .carousel-item {
+    min-height: 430px;
+  }
+
+  .laptop-carousel-img {
+    height: 430px;
+
+    padding: 10px 20px 170px;
+
+    object-fit: contain;
+  }
+
+
+  #laptopCarousel .carousel-caption {
+
+    top: auto;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    height: 180px;
+
+    padding: 15px 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(248, 250, 252, 0.94);
+  }
+
+
+  .carousel-content {
+    max-width: 100%;
+  }
+
+
+  .offer-text {
+    font-size: 10px;
+
+    padding: 5px 10px;
+
+    margin-bottom: 7px;
+  }
+
+
+  .carousel-content h1 {
+    font-size: 27px;
+
+    margin-bottom: 8px;
+  }
+
+
+  .carousel-content p:not(.offer-text) {
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    margin: 0 auto 12px;
+
+    max-width: 350px;
+  }
+
+
+  .shop-btn {
+    padding: 9px 22px;
+
+    font-size: 13px;
+  }
+
+
+  #laptopCarousel .carousel-control-prev,
+  #laptopCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+
+    margin: 0 8px !important;
+
+    opacity: 0.8;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  #laptopCarousel .carousel-item {
+    min-height: 380px;
+  }
+
+
+  .laptop-carousel-img {
+    height: 380px;
+
+    padding: 5px 15px 155px;
+  }
+
+
+  #laptopCarousel .carousel-caption {
+    height: 160px;
+
+    padding: 10px 15px;
+  }
+
+
+  .carousel-content h1 {
+    font-size: 23px;
+  }
+
+
+  .carousel-content p:not(.offer-text) {
+    font-size: 12px;
+
+    margin-bottom: 10px;
+  }
+
+
+  .shop-btn {
+    padding: 8px 18px;
+
+    font-size: 12px;
+  }
+}
+```

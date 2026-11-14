@@ -1,0 +1,229 @@
+
+/* Main Dashboard Layout */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  width: 270px;
+  min-height: 100vh;
+  background-color: #1e2438;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  flex-shrink: 0;
+}
+
+.sidebar-logo {
+  text-align: center;
+  padding: 15px 0 30px;
+  border-bottom: 1px solid #485069;
+}
+
+.sidebar-logo h3 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sidebar-logo p {
+  color: #b9c1d5;
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 25px 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  color: #e5e7ef;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.sidebar-link span {
+  font-size: 20px;
+}
+
+.sidebar-link:hover {
+  background-color: #303a56;
+  color: white;
+}
+
+.sidebar-link.active {
+  background-color: #2475f5;
+  color: white;
+}
+
+/* Logout */
+.sidebar-logout {
+  border-top: 1px solid #485069;
+  padding-top: 20px;
+}
+
+.sidebar-logout button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: transparent;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidebar-logout button span {
+  font-size: 20px;
+}
+
+.sidebar-logout button:hover {
+  background-color: #303a56;
+}
+
+/* Main Content */
+.admin-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Top Navbar */
+.admin-navbar {
+  height: 72px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+/* Hamburger */
+.admin-menu-icon button {
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+  color: #1e2438;
+}
+
+/* Admin Profile */
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e2438;
+}
+
+.admin-email-icon {
+  font-size: 21px;
+}
+
+.admin-dropdown-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Page Content */
+.admin-content {
+  padding: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 210px;
+    padding: 15px 10px;
+  }
+
+  .sidebar-logo h3 {
+    font-size: 19px;
+  }
+
+  .sidebar-link {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  .admin-navbar {
+    padding: 0 15px;
+  }
+
+  .admin-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-sidebar {
+    width: 75px;
+    padding: 15px 8px;
+  }
+
+  .sidebar-logo h3 {
+    font-size: 0;
+  }
+
+  .sidebar-logo h3::first-letter {
+    font-size: 25px;
+  }
+
+  .sidebar-logo p {
+    display: none;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+    font-size: 0;
+    padding: 14px 5px;
+  }
+
+  .sidebar-link span {
+    font-size: 22px;
+  }
+
+  .sidebar-logout button {
+    justify-content: center;
+    font-size: 0;
+    padding: 14px 5px;
+  }
+
+  .sidebar-logout button span {
+    font-size: 22px;
+  }
+
+  .admin-profile {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .admin-content {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,674 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 70px;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #111827;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+  margin-left: 35px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+
+  color: #374151;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.nav-menu a:hover {
+  color: #2563eb;
+}
+
+.nav-menu a.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   RIGHT SECTION
+========================================= */
+
+.nav-right {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-box {
+  display: flex;
+  align-items: center;
+
+  height: 38px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  overflow: hidden;
+}
+
+.search-box input {
+  width: 150px;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  padding: 0 10px;
+
+  font-size: 13px;
+}
+
+.search-box button {
+  width: 38px;
+  height: 100%;
+
+  border: none;
+
+  background: #f3f4f6;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+.cart {
+  position: relative;
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.cart:hover {
+  color: #2563eb;
+}
+
+.cart-count {
+  position: absolute;
+
+  top: -9px;
+  right: -10px;
+
+  width: 17px;
+  height: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER
+========================================= */
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.login-btn,
+.register-btn {
+  display: inline-block;
+
+  padding: 8px 13px;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.login-btn {
+  color: #2563eb !important;
+
+  background: white;
+
+  border: 1px solid #2563eb;
+}
+
+.login-btn:hover {
+  color: white !important;
+  background: #2563eb;
+}
+
+.register-btn {
+  color: white !important;
+
+  background: #2563eb;
+
+  border: 1px solid #2563eb;
+}
+
+.register-btn:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   MOBILE ELEMENTS
+========================================= */
+
+.mobile-search {
+  display: none;
+}
+
+.mobile-auth {
+  display: none;
+}
+
+
+/* =========================================
+   HAMBURGER
+========================================= */
+
+.menu-toggle {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  color: #111827;
+
+  font-size: 26px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-menu {
+    gap: 15px;
+    margin-left: 25px;
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+
+  .search-box input {
+    width: 110px;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 7px 10px;
+  }
+}
+
+
+/* =========================================
+   SMALL LAPTOP / TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .nav-menu {
+    gap: 10px;
+    margin-left: 18px;
+  }
+
+  .nav-menu a {
+    font-size: 14px;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+
+  /* Cart stays visible */
+  .cart {
+    display: inline-block;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    width: 100%;
+    min-height: 65px;
+    height: 65px;
+
+    padding: 0 15px;
+  }
+
+
+  /* Logo */
+
+  .logo a {
+    font-size: 20px;
+  }
+
+
+  /* Desktop navigation hide */
+
+  .nav-menu {
+    position: absolute;
+
+    top: 65px;
+    left: 0;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 15px;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+
+
+  /* Menu open */
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+
+  /* Menu links */
+
+  .nav-menu > a {
+    width: 100%;
+
+    padding: 13px 5px;
+
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+
+  /* =====================================
+     RIGHT SECTION
+     Cart stays visible
+  ===================================== */
+
+  .nav-right {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: 12px;
+
+    gap: 0;
+  }
+
+
+  /* Hide desktop search */
+
+  .nav-right .search-box {
+    display: none;
+  }
+
+
+  /* Hide desktop auth */
+
+  .nav-right .auth-buttons {
+    display: none;
+  }
+
+
+  /* Cart */
+
+  .cart {
+    display: inline-block;
+
+    font-size: 14px;
+  }
+
+
+  /* =====================================
+     HAMBURGER
+  ===================================== */
+
+  .menu-toggle {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* =====================================
+     MOBILE SEARCH
+  ===================================== */
+
+  .mobile-search {
+    display: flex;
+
+    width: 100%;
+
+    margin-top: 15px;
+  }
+
+  .mobile-search input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 40px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d1d5db;
+    border-right: none;
+
+    border-radius: 6px 0 0 6px;
+
+    outline: none;
+
+    font-size: 14px;
+  }
+
+  .mobile-search button {
+    width: 42px;
+    height: 40px;
+
+    border: 1px solid #d1d5db;
+
+    background: #f3f4f6;
+
+    border-radius: 0 6px 6px 0;
+
+    cursor: pointer;
+  }
+
+
+  /* =====================================
+     MOBILE LOGIN / REGISTER
+  ===================================== */
+
+  .mobile-auth {
+    display: flex;
+
+    width: 100%;
+
+    gap: 10px;
+
+    margin-top: 15px;
+  }
+
+  .mobile-auth .login-btn,
+  .mobile-auth .register-btn {
+    flex: 1;
+
+    text-align: center;
+
+    padding: 10px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 0 12px;
+  }
+
+  .logo a {
+    font-size: 18px;
+  }
+
+  .cart {
+    font-size: 13px;
+  }
+
+  .menu-toggle {
+    font-size: 24px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .logo a {
+    font-size: 17px;
+  }
+
+  .cart {
+    font-size: 12px;
+  }
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.profile-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.profile-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* User Email Dropdown */
+
+.user-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.email-icon {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #e9f0ff;
+  font-size: 21px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-icon:hover {
+  background: #d5e3ff;
+}
+
+.user-dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 230px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  z-index: 1000;
+}
+
+.user-dropdown-menu .user-email {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  padding: 8px;
+  overflow-wrap: anywhere;
+}
+
+.user-dropdown-menu a,
+.user-dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  background: white;
+  border: none;
+  text-align: left;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.user-dropdown-menu a:hover,
+.user-dropdown-menu button:hover {
+  background: #f1f4f9;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+  .nav-right .search-box {
+    display: none;
+  }
+
+  .nav-menu .mobile-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .nav-right .auth-buttons {
+    display: none;
+  }
+
+  .nav-right .user-dropdown {
+    display: flex;
+  }
+
+  .user-dropdown-menu {
+    right: 0;
+    top: 48px;
+  }
+
+}

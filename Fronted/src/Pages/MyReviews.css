@@ -1,0 +1,89 @@
+.my-review-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.my-review-container h2 {
+    font-weight: 700;
+    color: #172554;
+}
+
+.review-subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.review-form,
+.my-review-card {
+    background: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.08);
+}
+
+.review-form h4 {
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+.rating-select {
+    display: flex;
+    gap: 8px;
+}
+
+.rating-select span {
+    font-size: 32px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.rating-select span.active {
+    color: #ffb400;
+}
+
+.my-review-stars {
+    color: #ffb400;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.review-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.review-status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.review-status.approved {
+    background: #d1e7dd;
+    color: #146c43;
+}
+
+.review-status.rejected {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.review-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+@media(max-width: 576px) {
+    .my-review-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .review-form,
+    .my-review-card {
+        padding: 18px;
+    }
+}

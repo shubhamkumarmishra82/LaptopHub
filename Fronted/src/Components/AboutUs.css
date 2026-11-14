@@ -1,0 +1,201 @@
+.about-page {
+  background: #ffffff;
+  min-height: 70vh;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+  background: #f8fafc;
+  padding: 70px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.about-hero p {
+  color: #6b7280;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about-label {
+  display: inline-block;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.about-content h2 {
+  color: #111827;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   ABOUT CARD
+========================= */
+
+.about-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 35px;
+}
+
+.about-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.about-card h3 {
+  color: #111827;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.feature-item > span {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.feature-item h5 {
+  color: #111827;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.feature-item p {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* =========================
+   MISSION
+========================= */
+
+.about-mission {
+  max-width: 750px;
+  margin: 80px auto 20px;
+}
+
+.about-mission h2 {
+  color: #111827;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.about-mission p {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .about-hero {
+    padding: 50px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-content h2 {
+    font-size: 27px;
+  }
+
+  .about-card {
+    padding: 25px;
+  }
+
+  .about-mission {
+    margin-top: 55px;
+  }
+
+  .about-mission h2 {
+    font-size: 26px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .about-hero h1 {
+    font-size: 28px;
+  }
+
+  .about-hero p {
+    font-size: 14px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-card h3 {
+    font-size: 21px;
+  }
+}

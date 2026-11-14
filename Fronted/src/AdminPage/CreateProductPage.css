@@ -1,0 +1,127 @@
+
+.create-product-page {
+  width: 100%;
+}
+
+.create-product-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.create-product-heading h2 {
+  color: #1e2438;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.create-product-heading p {
+  color: #777;
+  margin: 0;
+  font-size: 14px;
+}
+
+.back-product-btn {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 9px 16px;
+  border-radius: 7px;
+  color: #333;
+}
+
+.product-form-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.product-form-card h4 {
+  color: #1e2438;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.product-form-card label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.product-form-card .form-control,
+.product-form-card .form-select {
+  min-height: 43px;
+  font-size: 14px;
+}
+
+.product-form-card textarea.form-control {
+  min-height: 120px;
+}
+
+.selected-image-name {
+  color: #2475f5;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.product-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.cancel-product-btn,
+.save-product-btn {
+  border: none;
+  padding: 11px 22px;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-product-btn {
+  background: #eee;
+  color: #444;
+}
+
+.save-product-btn {
+  background: #2475f5;
+  color: white;
+}
+
+.save-product-btn:hover {
+  background: #155ac5;
+}
+
+@media (max-width: 576px) {
+  .product-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-form-card {
+    padding: 16px;
+  }
+
+  .create-product-heading h2 {
+    font-size: 21px;
+  }
+
+  .product-form-actions button {
+    flex: 1;
+  }
+}

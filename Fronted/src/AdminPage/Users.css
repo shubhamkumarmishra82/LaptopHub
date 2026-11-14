@@ -1,0 +1,102 @@
+.users-page {
+    padding: 25px;
+    min-height: 100vh;
+    background: #f7f8fc;
+}
+
+.users-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.users-heading h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #202b3c;
+    margin-bottom: 5px;
+}
+
+.users-heading p {
+    color: #7b8494;
+    margin: 0;
+}
+
+.users-total {
+    background: #e8f0ff;
+    color: #2455a5;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.users-table-wrapper {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    overflow-x: auto;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+.users-table th {
+    background: #f3f5f9;
+    color: #526078;
+    font-size: 14px;
+    padding: 16px;
+    text-align: left;
+}
+
+.users-table td {
+    padding: 16px;
+    border-bottom: 1px solid #edf0f5;
+    color: #384357;
+    font-size: 14px;
+}
+
+.users-table tr:last-child td {
+    border-bottom: none;
+}
+
+.user-role {
+    background: #e6f9ef;
+    color: #16834a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.no-users {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    color: #7b8494;
+}
+
+.users-error {
+    color: #dc3545;
+}
+
+@media (max-width: 600px) {
+    .users-page {
+        padding: 15px;
+    }
+
+    .users-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .users-heading h2 {
+        font-size: 22px;
+    }
+}
